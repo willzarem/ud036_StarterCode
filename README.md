@@ -9,6 +9,8 @@ Source code for a Movie Trailer website.
 ## Download the project
  * Go to the [github repository](https://github.com/willzarem/ud036_StarterCode).
  * Click in the button in the upper left called "Clone or download" and click `Download ZIP`.... Or simply click [here](https://github.com/willzarem/ud036_StarterCode/archive/master.zip)
+
+## Execute the project
  * Extract the downloaded content in any folder
  * Navigate with the terminal/cmd/powershell to that directory
 
