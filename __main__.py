@@ -1,0 +1,30 @@
+# imports
+from media import Movie
+import fresh_tomatoes
+
+def main():
+	# creation of each Movie object with each individual property
+	the_boss_baby = Movie("The Boss Baby", "A new baby's arrival impacts a family, told from the point of view of a delightfully unreliable narrator -- a wildly imaginative 7-year-old named Tim", "http://www.impawards.com/2017/posters/boss_baby_xlg.jpg", "https://www.youtube.com/watch?v=r8kE7rSzfQs")
+	war_for_the_planet_of_the_apes = Movie("War for the Planet of the Apes", "Caesar (Andy Serkis) and his apes are forced into a deadly conflict with an army of humans led by a ruthless colonel (Woody Harrelson)", "https://i0.wp.com/media2.slashfilm.com/slashfilm/wp/wp-content/images/war-for-the-planet-of-the-apes-poster.jpg", "https://www.youtube.com/watch?v=IjK_h57ixPw")
+	cars_3 = Movie("Cars 3", "Blindsided by a new generation of blazing-fast cars, the legendary Lighting McQueen finds himself pushed out of the sport that he loves", "http://www.impawards.com/2017/posters/cars_three_ver3_xlg.jpg", "https://www.youtube.com/watch?v=E4K7JgPJ8-s")
+	the_lego_batman_movie = Movie("The LEGO Batman Movie", "There are big changes brewing in Gotham, but if Batman (Will Arnett) wants to save the city from the Joker's (Zach Galifianakis) hostile takeover, he may have to drop the lone vigilante thing, try to work with others and maybe, just maybe, learn to lighten up", "http://www.impawards.com/2017/posters/lego_batman_movie_ver4.jpg", "https://www.youtube.com/watch?v=LHgQSwgKygk")
+	logan = Movie("Logan", "In the near future, a weary Logan (Hugh Jackman) cares for an ailing Professor X (Patrick Stewart) at a remote outpost on the Mexican border", "http://www.joblo.com/timthumb.php?src=/posters/images/full/logan-poster-3.jpg&h=600&q=100", "https://www.youtube.com/watch?v=Div0iP65aZo")
+	the_handmaiden = Movie("The Handmaiden", "With help from an orphaned pickpocket (Kim Tae-ri), a Korean con man (Ha Jung-woo) devises an elaborate plot to seduce and bilk a Japanese woman (Kim Min-hee) out of her inheritance", "https://www.cinematerial.com/media/posters/md/iy/iyaywptj.jpg?v=1468521120", "https://www.youtube.com/watch?v=whldChqCsYk")
+	voyage_of_time = Movie("Voyage of Time", "Filmmaker Terrence Malick examines the origins of the universe, the birth of stars and galaxies, the beginning of life on Earth and the evolution of diverse species", "http://www.indiewire.com/wp-content/uploads/2016/06/image11.jpg", "https://www.youtube.com/watch?v=uTmZYcCjj9Q")
+	the_greasy_strangler = Movie("The Greasy Strangler", "Ronnie (Michael St. Michaels) runs a disco walking tour along with his browbeaten son, Brayden (Sky Elobar). When a sexy, alluring woman named Janet (Elizabeth De Razzo) comes to take the tour, it begins a competition between father and son for her attentions.", "http://www.impawards.com/2016/posters/greasy_strangler.jpg", "https://www.youtube.com/watch?v=VPl1vcb4hao")
+	always_shine = Movie("Always Shine", "Two women, both actresses with differing degrees of success, travel north from Los Angeles to Big Sur for a weekend vacation", "http://www.impawards.com/2016/posters/always_shine_xlg.jpg", "https://www.youtube.com/watch?v=wp4blJoV9h4")
+	shin_godzilla = Movie("Shin Godzilla", "Shin Godzilla is a 2016 Japanese monster film featuring Godzilla, produced by Toho and Cine Bazar and distributed by Toho", "https://images-na.ssl-images-amazon.com/images/I/81T3SbIwHUL._SY550_.jpg", "https://www.youtube.com/watch?v=zgyq6YKeIms")
+	kubo_and_the_two_strings = Movie("Kubo and the Two Strings", "Young Kubo's (Art Parkinson) peaceful existence comes crashing down when he accidentally summons a vengeful spirit from the past", "http://www.impawards.com/2016/posters/kubo_and_the_two_strings_ver14_xlg.jpg", "https://www.youtube.com/watch?v=p4-6qJzeb3A")
+	the_alchemist_cookbook = Movie("The Alchemist Cookbook", "An isolated man (Ty Hickson) lands in hot water when he summons an ancient demon in the backwoods of Grand Rapids, Mich", "http://www.impawards.com/2016/posters/alchemist_cookbook.jpg", "https://www.youtube.com/watch?v=q42qZ1oKnfw")
+	rogue_one_a_star_wars_story = Movie("Rogue One: A Star Wars Story", "Former scientist Galen Erso lives on a farm with his wife and young daughter, Jyn. His peaceful existence comes crashing down when the evil Orson Krennic takes him away from his beloved family", "http://www.impawards.com/2016/posters/rogue_one_a_star_wars_story_ver17.jpg", "https://www.youtube.com/watch?v=sC9abcLLQpI")
+	moonlight = Movie("Moonlight", "A look at three defining chapters in the life of Chiron, a young black man growing up in Miami. His epic journey to manhood is guided by the kindness, support and love of the community that helps raise him.", "https://www.cinematerial.com/media/posters/md/oq/oqkubbjp.jpg?v=1477422171", "https://www.youtube.com/watch?v=9NJj12tJzqc")
+	cloverfield_lane = Movie("10 Cloverfield Lane", "After surviving a car accident, Michelle (Mary Elizabeth Winstead) wakes up to find herself in an underground bunker with two men", "http://www.impawards.com/2016/posters/ten_cloverfield_lane_xlg.jpg", "https://www.youtube.com/watch?v=saHzng8fxL")
+	wonder_woman = Movie("Wonder Woman", "Before she was Wonder Woman (Gal Gadot), she was Diana, princess of the Amazons, trained to be an unconquerable warrior", "http://www.impawards.com/2017/posters/wonder_woman_ver5_xlg.jpg", "https://www.youtube.com/watch?v=5lGoQhFb4NM")
+
+	# add all the objects to an array to be sent to the fresh_tomatoes  function
+	collection = [the_boss_baby, war_for_the_planet_of_the_apes, cars_3, the_lego_batman_movie, logan, the_handmaiden, voyage_of_time, the_greasy_strangler, always_shine, shin_godzilla, kubo_and_the_two_strings, the_alchemist_cookbook, rogue_one_a_star_wars_story, moonlight, cloverfield_lane, wonder_woman]
+	fresh_tomatoes.open_movies_page(collection)
+
+# standard script initialization
+if __name__ == '__main__':
+	main()
