@@ -38,6 +38,10 @@ main_page_head = '''
         .movie-tile {
             margin-bottom: 20px;
             padding-top: 20px;
+            min-height: 460px;
+        }
+        .movie-tile h2{
+            cursor: help !important;
         }
         .movie-tile:hover {
             background-color: #EEE;
@@ -77,6 +81,8 @@ main_page_head = '''
         });
         // Animate in the movies when the page loads
         $(document).ready(function () {
+          // initialize tooltips plugin
+          $('[data-toggle="tooltip"]').tooltip();
           $('.movie-tile').hide().first().show("fast", function showNext() {
             $(this).next("div").show("fast", showNext);
           });
@@ -121,10 +127,11 @@ main_page_content = '''
 
 
 # A single movie entry html template
+# Show the storyline as a bootstrap tooltip
 movie_tile_content = '''
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="{trailer_youtube_id}" data-toggle="modal" data-target="#trailer">
     <img src="{poster_image_url}" width="220" height="342">
-    <h2>{movie_title}</h2>
+    <h2 data-toggle="tooltip" data-placement="bottom" title="{description}">{movie_title}</h2>
 </div>
 '''
 
@@ -144,6 +151,8 @@ def create_movie_tiles_content(movies):
         # Append the tile for the movie with its content filled in
         content += movie_tile_content.format(
             movie_title=movie.title,
+            # added storyline to each object
+            description=movie.storyline,
             poster_image_url=movie.poster_image_url,
             trailer_youtube_id=trailer_youtube_id
         )
