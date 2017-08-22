@@ -1,5 +1,5 @@
 # imports
-from media import Movie
+from movie import Movie
 import fresh_tomatoes
 
 def main():
