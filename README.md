@@ -13,8 +13,5 @@ Source code for a Movie Trailer website.
 ## Execute the project
  * Extract the downloaded content in any folder
  * Navigate with the terminal/cmd/powershell to that directory
-
- > if you're using windows, open that folder and in the address bar write `powershell` and it is done!. ;)
-
  * Execute the command `py __main__.py` or `pyhton __main__.py` depending on your configurations.
  * Enjoy. :)  
