@@ -16,5 +16,5 @@ Source code for a Movie Trailer website.
 
  > if you're using windows, open that folder and in the address bar write `powershell` and it is done!. ;)
 
- * Execute `py .` or `pyhton .` depending on your configurations.
+ * Execute the command `py __main__.py` or `pyhton __main__.py` depending on your configurations.
  * Enjoy. :)  
